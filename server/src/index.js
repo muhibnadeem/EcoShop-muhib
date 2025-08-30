@@ -18,7 +18,7 @@ import stripeWebhook from './routes/stripe-webhook.js';
 const app = express();
 const prisma = new PrismaClient();
 
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:3000';
+const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:4000';
 
 app.use(helmet());
 app.use(morgan('dev'));
